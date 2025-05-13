@@ -1,0 +1,107 @@
+
+body {
+    background-color: #e8d5c2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c09b7a;
+    margin: 0;
+    text-align: center;
+}
+
+.main-logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(../roti.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+   
+}
+
+nav {
+    padding: 8px;
+    background-color: #fff3e0;
+}
+
+a {
+    color: rgb(21, 13, 3);
+    font-family: italic;
+}
+
+a:hover {
+    color:blueviolet;
+}
+
+section {
+    text-align: center;
+    font-family: italic;
+}
+
+
+.item-list div{
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff3e0;
+
+}
+
+.pakages {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px
+}
+
+.pakagess {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px
+}
+
+
+.roti1 {
+    text-align: center;
+    width: 30%;
+    background-color: #fcebd7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.roti2 {
+    text-align: center;
+    width: 30%;
+    background-color: #fcebd7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.roti1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.roti1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+footer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+    .banner-form {
+        flex-direction: column;
+    }
+}
