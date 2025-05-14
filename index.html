@@ -9,6 +9,7 @@
     <!-- CSS eksternal -->
 
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
 </head>
 <body>
     
@@ -52,16 +53,42 @@
 
             <div class="main">
                 <div class="left">
-                    <img src="toko.jpg" alt="Najwa Bakery">
+                    <img src="/pictures/Toko.png" alt="Najwa Bakery">
             </div>
 
-            <div class="right item-list">
+            <div class="item-list">
                 <div onclick="showDetail('croissant', 'Rp 15.000', 'Roti lapis asal prancis')">Croissant</div>
-                <div onclick="showDetail('Donat', 'Rp 10.000', 'Roti berbentuk bulat dengan lubang di tengahnya')">Donat</div>
                 <div onclick="showDetail('Boguette', 'Rp 20.000', 'Roti panjang asal prancis')">Boguette</div>
-                <div onclick="showDetail('Roti Tawar', 'Rp 8.000', 'Roti tawar')">Roti Tawar</div>
-                <div onclick="showDetail('Roti coklat', 'Rp 10.000', 'Roti dengan isian selai coklat')">Roti manis</div>
-                <div onclick="showDetail('Roti Keju', 'Rp 15.000', 'Roti dengan isian keju')">Roti keju</div>
+                <div onclick="showDetail('Roti canai', 'Rp 8.000', 'Roti tawar')">Roti canai</div>
+                <div onclick="showDetail('Ciabatta', 'Rp 10.000', 'Roti dengan isian selai coklat')">Ciabatta</div>
+                <div onclick="showDetail('Pretzel', 'Rp 15.000', 'Roti dengan isian keju')">Pretzel</div>
+                <div onclick="showDetail('Kanelbullar', 'Rp 15.000', 'Roti lapis asal prancis')">Kanelbullar</div>
+
+            <form onsubmit="returnbuatPesananForm(event)">
+
+                <label>Nama: </label>
+                <input type="text" id="Nama"><br><br>
+
+                <label>Pilih Roti:</label>
+                <select id="pilihan">
+                    <option value="">--Pilih Roti--</option>
+                    <option value="croissant">croissant</option>
+                    <option value="Boguette">Boguette</option>
+                    <option value="Roti Canai">Roti Canai</option>
+                    <option value="Ciabatta">Ciabatta</option>
+                    <option value="Pretzel">Pretzel</option>
+                    <option value="Kanelbullar">Kanelbullar</option>
+                </select> <br><br>
+
+                <button type="submit">Buat pesanan</button>
+
+            </form>
+            
+            <div id="customAlert" class="modal">
+
+                <div class="modal-content">
+                    <span class="close" onclick="tutupModal()">&times;</span>
+                    <p id="alertText"></p>
             </div>
 
         </section>
@@ -75,39 +102,40 @@
             
             <div class="pakages">
                 <div class="roti1">
-                    <img src="croissant.jpg" alt="croissant">
+                    <img src="/pictures/Croissant.jpg" alt="croissant">
                     <h4>roti asal prancis</h4>
                     <p>dengan tekstur yang lembut</p>
                 </div>
                 <div class="roti1">
-                    <img src="donat.jpg" alt="donat">
-                    <h4>donat</h4>
-                    <p>roti donat</p>
+                    <img src="/pictures/kanelbullar.jpg" alt="Kanelbullar">
+                    <h4>Kanelbullar</h4>
+                    <p>Kanelbullar</p>
                 </div>
                 <div class="roti1">
-                    <img src="roti tawar.jpg" alt="roti tawar">
-                    <h4>roti tawar</h4>
-                    <p>roti tawar</p>
+                    <img src="/pictures/pretzel.jpg" alt="Pretzel">
+                    <h4>Pretzel</h4>
+                    <p>Pretzel</p>
                 </div>
 
                 </div>
 
             <div class="pakagess">
                 <div class="roti2">
-                    <img src="roti manis.jpg" alt="roti manis">
-                    <h4>roti manis</h4>
-                    <p>roti manis</p>
+                    <img src="/pictures/Ciabatta.jpg" alt="Ciabatta">
+                    <h4>Ciabatta</h4>
+                    <p>Ciabatta</p>
                 </div>
                 <div class="roti2">
-                    <img src="roti keju.jpg" alt="roti keju">
-                    <h4>roti keju</h4>
-                    <p>roti keju</p>
+                    <img src="/pictures/Roti canai.jpg" alt="Roti canai">
+                    <h4>Roti canai</h4>
+                    <p>Roti canai</p>
                 </div>
                 <div class="roti2">
-                    <img src="boguette.jpg" alt="boguette">
+                    <img src="/pictures/baguette.jpg" alt="boguette">
                     <h4>boguette</h4>
                     <p>boguette</p>
                 </div>
+
             </div>
 
         </section>
@@ -118,8 +146,13 @@
 
         <section id="call-us">
 
-            <p>whatsapp</p>
-            <p>instagram</p>
+            <a href="https://wa.me/083867041520" target="_blank">
+                <button class="button-whatsapp"><b>WhatsApp</b></button>
+            </a>
+
+            <a href="https://www.instagram.com/najwabakery" target="_blank">
+                <button class=button-instagram>Kunjungi Instagram</button>
+            </a>
 
         </section>
 
@@ -129,6 +162,7 @@
     <hr/>
 
     <script src="/JS/script.js"></script>
+
 
     <!-- footer -->
 
