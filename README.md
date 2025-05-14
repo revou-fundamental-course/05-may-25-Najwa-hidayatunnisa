@@ -17,4 +17,4 @@ menampilkan daftar produk, informasi pesanan serta tombol kontak whatsapp dan in
 
 ## Link Live
 
-klik disini untuk melihat website -> 
+klik disini untuk melihat website -> https://revou-fundamental-course.github.io/05-may-25-Najwa-hidayatunnisa/
