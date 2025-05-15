@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najwa Bakery</title>
+
+    <!-- CSS eksternal -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+    
+    <!-- main header -->
+
+    <header class="main-header">
+
+        <!-- Logo -->
+
+        <div class="main-logo"></div>
+        <!-- navigation -->
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#Our-story">Our story</a>
+            <a href="#call-us">Call Us</a>
+        </nav>
+
+    </header>
+
+    <hr/>
+
+    <!-- Main content -->
+
+    <main>
+
+        <!-- home content -->
+
+        <section id="home">
+
+            <header>
+                <h1>Your bakery is here!</h1>
+            </header>
+
+            <h4>Your Happiness is Our Happiness</h4>
+
+<!-- banner & form content -->
+<!-- ini adalah foto toko saya, yang mana ini dibuat menggunakan meta whatsapp bukan pintres -->
+<!-- supaya auto slide -->
+
+            <div class="main">
+                <div class="left">
+                    <img class= "slide" src="pictures/toko-roti1.jpg" alt="toko roti 1">
+                    <img class= "slide" src="pictures/toko-roti2.jpg" alt="toko roti 2">
+                    <img class= "slide" src="pictures/toko-roti3.jpg" alt="toko roti 3">
+            </div>
+
+<!-- list item, yang kalau di klik akan muncul deskripsi dan popup -->
+
+            <div class="item-list">
+                <div onclick="showDetail('croissant', 'Rp 15.000', 'Roti lapis asal prancis')">Croissant</div>
+                <div onclick="showDetail('Boguette', 'Rp 20.000', 'Roti panjang asal prancis')">Boguette</div>
+                <div onclick="showDetail('Roti canai', 'Rp 8.000', 'Roti tawar')">Roti canai</div>
+                <div onclick="showDetail('Ciabatta', 'Rp 10.000', 'Roti dengan isian selai coklat')">Ciabatta</div>
+                <div onclick="showDetail('Pretzel', 'Rp 15.000', 'Roti dengan isian keju')">Pretzel</div>
+                <div onclick="showDetail('Kanelbullar', 'Rp 15.000', 'Roti lapis asal prancis')">Kanelbullar</div>
+                
+<!-- From, atau semacam laman buat pemesanan, tinggal isi nama dan roti akan dipesan ^^ -->
+
+            <form onsubmit="returnbuatPesananForm(event)">
+
+                <label>Nama: </label>
+                <input type="text" id="Nama"><br><br>
+
+                <label>Pilih Roti:</label>
+                <select id="pilihan">
+                    <option value="">--Pilih Roti--</option>
+                    <option value="croissant">croissant</option>
+                    <option value="Boguette">Boguette</option>
+                    <option value="Roti Canai">Roti Canai</option>
+                    <option value="Ciabatta">Ciabatta</option>
+                    <option value="Pretzel">Pretzel</option>
+                    <option value="Kanelbullar">Kanelbullar</option>
+                </select> <br><br>
+
+ <!--ini button atau yang buat submir atau mengirim gitu -->    
+
+                <button type="submit">Buat pesanan</button>
+
+            </form>
+ 
+ <!--tombol x buat close popup--> 
+            
+            <div id="customAlert" class="modal">
+
+                <div class="modal-content">
+                    <span class="close" onclick="tutupModal()">&times;</span>
+                    <p id="alertText"></p>
+            </div>
+
+        </section>
+
+ <!-- bagian paling mrnarik, soalnya disini ada berbagai macam tampilan roti beserta deskripsi sama asal-usulnya, tapi kurang interaktif dan waktunga mepet banget, dan kalau udah interaktif via mobile, berarti udah bisa ^^ -->       
+
+        <section id="our-story">
+
+            <!-- our story content -->
+
+            <h2>Sebuah cerita</h2>
+            <p>Najwa Bakery adalah toko roti yang didirikan pada tahun 2025 oleh Najwa. Dengan pengalaman bertahun-tahun dalam membuat roti, Najwa memutuskan untuk membuka toko roti sendiri. Toko ini menawarkan berbagai jenis roti, dari croissant hingga roti tawar, semuanya dibuat dengan bahan-bahan berkualitas tinggi dan resep rahasia keluarga.</p>
+
+<!-- gambarnya di generate menggunakan meta Ai whatsapp dan ini hasilnya -->
+            
+            <div class="pakages">
+                <div class="roti1">
+                    <img src="pictures/Croissant.jpg" alt="croissant">
+                    <h4>croissant</h4>
+                    <p>Croissant berasal dari Austria, bukan Prancis seperti yang banyak orang kira. Roti ini pertama kali diciptakan di Wina pada abad ke-17 untuk merayakan kemenangan atas Ottoman, lalu diperkenalkan di Prancis pada abad ke-19. Bentuk bulan sabitnya melambangkan lambang kekaisaran Ottoman.
+                    <b>Fakta unik:</b> Teknik laminasi adonan yang berlapis-lapis membuat tekstur croissant renyah dan berongga.</p>
+                </div>
+                <div class="roti1">
+                    <img src="pictures/kanelbullar.jpg" alt="Kanelbullar">
+                    <h4>Kanelbullar</h4>
+                    <p>Kanelbullar adalah roti gulung kayu manis khas Swedia, mulai populer sejak awal abad ke-20. Biasanya disajikan saat fika — tradisi ngopi dan ngobrol khas Swedia. Aromanya yang manis dan hangat bikin nyaman banget. <b>Fakta unik:</b> Setiap 4 Oktober di Swedia diperingati sebagai Hari Kanelbullar Nasional!</p>
+                </div>
+                <div class="roti1">
+                    <img src="pictures/pretzel.jpg" alt="Pretzel">
+                    <h4>Pretzel</h4>
+                    <p>Pretzel berasal dari Jerman, dan konon dibuat pertama kali oleh biarawan Katolik di abad ke-7. Bentuk simpulnya melambangkan tangan yang sedang berdoa. Pretzel jadi makanan tradisional Bavaria yang sering disajikan dengan bir. <b>Fakta unik:</b> Cita rasa khasnya datang dari pencelupan dalam larutan alkali sebelum dipanggang.</p>
+                </div>
+
+                </div>
+
+<!-- aku bagi jadi dua supaya styling nya lebih gampang-->
+
+            <div class="pakagess">
+                <div class="roti2">
+                    <img src="pictures/Ciabatta.jpg" alt="Ciabatta">
+                    <h4>Ciabatta</h4>
+                    <p>Ciabatta berasal dari Italia dan baru diciptakan tahun 1982 sebagai jawaban atas popularitas baguette Prancis. Namanya berarti “sandal” karena bentuknya yang lebar dan pipih. Roti ini punya tekstur berongga dan kulit renyah. <b>Fakta unik:</b> Cocok banget buat sandwich karena seratnya besar tapi tetap lembut di dalam.</p>
+                </div>
+                <div class="roti2">
+                    <img src="pictures/Roti canai.jpg" alt="Roti canai">
+                    <h4>Roti canai</h4>
+                    <p>Roti Canai berasal dari India Selatan, dibawa oleh para imigran Tamil ke Malaysia dan Indonesia. Nama “canai” berasal dari “channa,” nama hidangan kari kacang di India. Teksturnya pipih dan lentur, sering dimakan dengan kari atau gula.
+                    <b>Fakta unik:</b> Dibuat dengan proses menipiskan dan membanting adonan, mirip seni sulap dapur!</p>
+                </div>
+                <div class="roti2">
+                    <img src="pictures/baguette.jpg" alt="boguette">
+                    <h4>boguette</h4>
+                    <p>Baguette adalah roti khas Prancis yang mulai populer sejak awal abad ke-20. Ciri khasnya adalah bentuknya yang panjang dan kulitnya yang renyah. Roti ini jadi ikon kuliner Prancis dan sering dikaitkan dengan sarapan ala Paris.
+                    <b>Fakta unik:</b> Ada hukum di Prancis bahwa baguette tradisional hanya boleh dibuat dari tepung, air, ragi, dan garam.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr />
+
+        <!-- panggil kami melalui -->
+        
+
+<!-- ini stumulasi gitu, tapi aku bukan jualan beneran dan media sosial aku emang ini dan nomor whatsapp juga benar, cuman buat stimulasi okay -->
+
+        <section id="call-us">
+
+            <h1>Hubungi kami melalui : </h1>
+
+            <a href="https://wa.me/083867041520" target="_blank">
+                <button class="button-whatsapp"><b>WhatsApp</b></button>
+            </a>
+
+<!-- nah ini link nya -->
+
+            <a href="https://www.instagram.com/najwaaaa_hidayatunnisa" target="_blank">
+                <button class=button-instagram>Kunjungi Instagram</button>
+            </a>
+
+        </section>
+  
+    <hr/>
+
+<!--path buat connect javascript ke html-->
+
+    <script src="js/script.js"></script>
+
+    <!-- footer -->
+
+    <footer>
+
+        <span>
+            &copy; 2025 Najwa Bakery. Roti buatan rumah disini
+        </span>
+    </footer>
+
+</body>
+</html>

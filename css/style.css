@@ -1,0 +1,258 @@
+
+/* ini untuk styling body dan aku maunya milih warna yang cantik dan hangat khas bakery */
+
+body {
+    background-color: #e8d5c2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+
+}
+
+/* styling main header untuk tombol navigasi */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c09b7a;
+    margin: 0;
+    text-align: center;
+}
+
+/* untuk logo gambar profil */
+
+.main-logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(../pictures/Profil.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+   
+}
+
+/* isi konten main */
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+/* styling form nya */
+
+form {
+    padding: 20px;
+    background-color: #c09b7a;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 350px;
+    margin: auto;
+}
+
+/* styling input dan seleksi */
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 16px;
+    border: 1px solid #e8d5c2;
+    border-radius: 8px;
+}
+
+/* untuk button nya di styling juga biad matching sama background nya yang hangat */
+
+button {
+    background-color: #e8d5c2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* supaya kalau diletakin cursor warna nya berubah, kayak magic-magic */
+
+button:hover {
+    background-color: bisque;
+}
+
+/* styling item nya */
+
+.item-list div {
+    background-color: #c09b7a;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* sama juga, biar kalau kena cursor ada aura magis */
+
+.item-list:hover {
+    background-color: blanchedalmond;
+}
+
+/* tombol navigasi */
+
+nav {
+    padding: 8px;
+    background-color: #fff3e0;
+}
+
+/* navigasinya di styling juga */
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #c09b7a;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #fff3e0;
+}
+
+a {
+    color: rgb(21, 13, 3);
+    font-family: italic;
+}
+
+section {
+    text-align: center;
+    font-family: italic;
+}
+
+.left {
+    img {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+
+.item-list div{
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff3e0;
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0; top: 0;
+    width: 30vw; height: 50vh;
+    background-color: #c09b7a;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: auto;
+}
+
+.modal-content {
+    position: relative;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.close {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.pakages, .pakagess {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.roti1, .roti2 {
+    text-align: center;
+    width: 30%;
+    background-color: #fcebd7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.roti1 img, .roti2 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.call-us {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e8d5c2;
+    border-top: 1px solid #e2c6a2;
+    margin-top: 40px;
+}
+
+.button-instagram, .button-whatsapp {
+    margin-top: 8px;
+    background-color: #c09b7a;
+    padding: 12px 24px;
+    font-size: larger;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+footer {
+    text-align: center;
+    color: #c09b7a;
+}
+
+a:hover {
+    color:blueviolet;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 400px) {
+        .main {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .roti1, .roti2 {
+          width: 80%;
+          margin: 10px 0;
+        }
+}
+
+    
