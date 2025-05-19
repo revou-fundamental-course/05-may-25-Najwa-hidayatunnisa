@@ -1,3 +1,5 @@
+## disclaimer! INI PROJEK PERTAMA SAYA, SEMUA DIDALAM HANYALAH KONTEN, BUKAN BENERAN JUALAN!
+
 ## Najwa Bakery
 
 website toko roti sederhana, project pertama saya dari revoU
